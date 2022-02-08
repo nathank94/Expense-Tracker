@@ -1,5 +1,5 @@
-import React, {useState, useContext} from 'react'
-import { GlobalContext } from '../context/GlobalState';
+import React, { useState, useContext } from 'react'
+import { GlobalContext } from './context/GlobalState';
 
 export const AddTransaction = () => {
   const [text, setText] = useState('');
@@ -29,7 +29,7 @@ export const AddTransaction = () => {
         </div>
         <div className="form-control">
           <label htmlFor="amount"
-            >Amount <br />
+          >Amount <br />
             (negative - expense, positive - income)</label
           >
           <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Enter amount..." />
